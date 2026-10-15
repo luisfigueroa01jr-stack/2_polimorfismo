@@ -1,6 +1,8 @@
 // Ejercicio 2: Polimorfismo en accion
 #include <iostream>
+#include <map>
 #include <memory>
+#include <string>
 #include <vector>
 #include "Auto.h"
 #include "Motocicleta.h"
@@ -19,6 +21,17 @@ int main() {
     // La misma llamada produce una salida distinta segun el tipo real del objeto
     for (const auto& v : vehiculos) {
         v->mostrarInfo();
+    }
+
+    // tipo() tambien se resuelve en tiempo de ejecucion; se usa para contar por tipo
+    std::map<std::string, int> conteo;
+    for (const auto& v : vehiculos) {
+        conteo[v->tipo()]++;
+    }
+
+    std::cout << "\n-- Conteo por tipo --" << std::endl;
+    for (const auto& par : conteo) {
+        std::cout << par.first << ": " << par.second << std::endl;
     }
 
     return 0;
