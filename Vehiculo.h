@@ -29,6 +29,9 @@ public:
 
     // Metodo virtual que cada derivada sobrescribe
     virtual void mostrarInfo() const;
+
+    // Devuelve el nombre del tipo real del objeto ("Auto", "Motocicleta")
+    virtual std::string tipo() const;
 };
 
 #endif

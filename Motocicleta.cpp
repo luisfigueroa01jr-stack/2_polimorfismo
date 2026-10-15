@@ -23,3 +23,7 @@ void Motocicleta::mostrarInfo() const {
     std::cout << " | Cilindrada: " << cilindrada << " cc"
               << " | Sidecar: " << (tieneSidecar ? "Si" : "No") << std::endl;
 }
+
+std::string Motocicleta::tipo() const {
+    return "Motocicleta";
+}

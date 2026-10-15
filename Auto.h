@@ -20,6 +20,7 @@ public:
     void setTipoCombustible(const std::string& tipoCombustible);
 
     void mostrarInfo() const override;
+    std::string tipo() const override;
 };
 
 #endif

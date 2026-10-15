@@ -25,3 +25,7 @@ void Auto::mostrarInfo() const {
     std::cout << " | Puertas: " << numPuertas
               << " | Combustible: " << tipoCombustible << std::endl;
 }
+
+std::string Auto::tipo() const {
+    return "Auto";
+}

@@ -29,3 +29,7 @@ void Vehiculo::mostrarInfo() const {
     mostrarDatosComunes();
     std::cout << std::endl;
 }
+
+std::string Vehiculo::tipo() const {
+    return "Vehiculo";
+}

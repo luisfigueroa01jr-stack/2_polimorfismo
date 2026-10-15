@@ -20,6 +20,7 @@ public:
     void setTieneSidecar(bool tieneSidecar);
 
     void mostrarInfo() const override;
+    std::string tipo() const override;
 };
 
 #endif
